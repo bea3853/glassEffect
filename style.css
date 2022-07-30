@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+
+    width: 100%;
+    color:greenyellow;
+    max-width: 500px;
+    background-color:transparent;
+    padding: 35px;
+    border: 2px solid #fff;
+    backdrop-filter: blur(0px);
+    overflow: hidden;
+    /* ocultar */
+    transition: backdrop-filter 1s;
+    border-radius: 25px;
+
+}
+
+
+.text{
+    color:aliceblue;
+    position: relative;
+    top:200px;
+    transition: top 1s;
+}
+
+.container:hover .text{
+    top:0;
+}
+
+.container:hover {
+    backdrop-filter: blur(12px);
+}
+/* // glassmorfismo com CSS */
